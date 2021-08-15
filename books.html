@@ -159,21 +159,77 @@
 									<h4>High Speed Digital Design by Howard Johnson</h4>
 									<h4>Hands-On RTOS with Microcontrollers by Brian Amos</h4>
 
-									<p>When I was at university, I didn't take any course on real time operating systems. I 
-										do remember having a class over the semester where I was introduced to C programming language, but learning C in six months it's not an easy task, even more than three years it's not enough I would say. However, C it's the core where the majority of real time operating system are made due the performance, obviously there will be some assembly code that will be required for sure :). Anyways, real time operating systems it's a must to learn in your concepts during your engineering carreer as an engineer related to electronics. 
+									<p>When I was at university, I didn't take any course on real time operating systems. I
+										do remember having a class over the semester where I was introduced to C
+										programming language, but learning C in six months it's not an easy task if not
+										impossible, neither more than three years it's not enough I would say. However,
+										C it's the programming language  where all majority of real time operating
+										systems are made due performance, obviously there will be some assembly line
+										codes that will be required for sure :). 
+										Anyways, knowning real time operating systems it's a MUST item to add in your
+										hardware embedded engineering backpack.
 									</p>
 
-									<p>
-										This book has been released in less than three years by the time I'm writing this and Brian has made a great effort in sharing the right ideas when you need to work with RTOS. Semaphores, queues, tasks, kernel, decoupling code and make it agnostics while preserving performace. These are the words that you will read in this book. 
-										
-										If you haven't had any experience with RTOS I would highly recommended it. There is a chapter that have accurate thoughts about how to select a microcontroller based on several considerations. Also, Amos shows how to work with debugging tools targeted to Segger debugger probes, which are like the top gamma within embedded, but not open sadly...
+									<p>If you've never been exposed to RTOS but you already have some background in C, this
+									book is for you. It has been released in less than three years by the time I'm writing 
+									this review and Brian has made a great effort in sharing the right ideas when you need 
+									to work with RTOS.</p>
 
-										It's more oriented to embedded field rather than hardware, but I think at this point of the game, you should be able to manage yourself within embedded and hardware since they are married together. 
+									<p>Based on my experience, I tend to believe that usually you realize that you need to work
+									with RTOS when your firmware requires to perform complex tasks with tigh timing
+									requirements in an isolate fashion, that means that one task can run without having any
+									knowledge of other tasks.</p>
 
-										Also, it shows code along with the explanations which is good if you expect to have implementations that ilustrate the ideas exposed. However, it won't have huge code per ilustrations. But I think this book strikes to the point where right now, new books coming out in hardware/embedded disciplines should contain a lot content that shows ideas along with bold implementations about the why deciding to use this or that, specially in embedded that I'm seeking to see more and more code with reason to use it in that particular way. 
+									<p>By the time you're desigining your firmware you intuitively discover that some
+									syncronization should happening between one task and another and this is when it enters
+									the primitive of the RTOS which are common components that you will see between
+									differents RTOS. These primitives such semaphores, queues are explained in the book
+									along with other concepts such as decoupling code that will make your firmware agnostic
+									while preserving performance.</p> 
+									
+									<p>What I do like about embedded programmig is how detailed-oriented is to the actual
+									hardware that you are describing and how you can soak every single characteristics to
+									make it highly performance, as comparing to other level of abstraction where hardware
+									characteristics are not a really concern.</p> 
 
-										Definitely worth the money. 
+									<p>As an embedded hardware designer you're always gonna find youself to select the brain of
+									your board. Most of the time, this brain would be a microcontroller, but sometimes can
+									be a microcontroller and a FPGA, but that's another topic. Asumming that the only brain
+									is a microcontroller, you will have to face with several aspects such as memory (all
+									kinds of memory involved in the process, normally RAM and FLASH),
+									ecosystem offered, and more. Beteween all those aspects, there are some that are more
+									related to the code you're will program into that brain and in this books I would say
+									that the chapter dedicated in how to select a microcontroller covers the majority of the
+									fundamental ideas that you need to set on the table to actually come with an specific
+									microcontroller model.</p> 
 
+									<p>In embedded programming there is one topic that it's HUGELY important because a high
+									percentage of your time will be on this and it's debugging. There is another chapter
+									dedicated to how to debug RTOS. Even though is more focused in tools associated to
+									Segger which is the company that I think today it has a solid catalog of debug
+									probes and software tools to explore every tine detail in microcontroller that have
+									inside ARM Cortex processor. I guess it's a good start point to explore what options the
+									market already offers. I wish that in near future we could have at our disposal open
+									source and hardware options to explore at same level than propietary code. In this
+									chapter you will learn to identify what are the components to keep an eye on it when
+									exploring what's wrong with your device which comparing to bare metal, debugging is more
+									complex and more difficult even when bugs appears after a long time of having the
+									hardware running.</p> 
+
+									<p>This book it's definitely oriented to embedded programming field rather than hardware.
+									Hence, this book is to increase your level in RTOS topic from nothing to gain context,
+									it will help you to know what are the typical considerations when dealing with RTOS so
+									you can search by your own another literature if you feel that some topic has not been
+									covered with finer grained ad want to explore more toward that direction.</p> 
+
+									<p>Also, it shows code along with the explanations which is good if you expect to have 
+									implementations that ilustrate the ideas exposed, which I think it's FUNDAMENTAL to
+									understand how the concepts are matched in real world scenarios, and the decisions
+									behind why implement it in a particular way.</p>
+
+									<p>In overall, read book is for those are thinking about doing they first steps in RTOS
+									jumping from the baremetal to a new and great world to explore in this realm of embedded
+									hardware.</p>
 									</p>
 									<h4>PCB Design for Real-World EMI Control by Bruce Archambeault</h4>
 									<h4>Grounding and Shielding by Ralph Morrison</h4>
